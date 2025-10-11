@@ -37,35 +37,37 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  function openModal(src, alt) {
-    modalImg.src = src;
-    modalImg.alt = alt || '';
-    imgModal.setAttribute('aria-hidden', 'false');
-    document.addEventListener('keydown', escClose);
+function openModal(src, alt) {
+  modalImg.src = src;
+  modalImg.alt = alt || '';
+  imgModal.setAttribute('aria-hidden', 'false');
+  document.body.classList.add('modal-open');
+  document.addEventListener('keydown', escClose);
 
-    modalImg.onload = () => {
-      const { naturalWidth, naturalHeight } = modalImg;
-      const aspectRatio = naturalWidth / naturalHeight;
-      const modalContent = imgModal.querySelector('.modal-content');
+  modalImg.onload = () => {
+    const { naturalWidth, naturalHeight } = modalImg;
+    const aspectRatio = naturalWidth / naturalHeight;
+    const modalContent = imgModal.querySelector('.modal-content');
 
-      modalContent.style.width = '';
-      modalContent.style.height = '';
+    modalContent.style.width = '';
+    modalContent.style.height = '';
 
-      if (aspectRatio > 1.2) {
-        modalContent.style.width = '90vw';
-        modalContent.style.height = 'auto';
-      } else {
-        modalContent.style.height = '90vh';
-        modalContent.style.width = 'auto';
-      }
-    };
-  }
+    if (aspectRatio > 1.2) {
+      modalContent.style.width = '90vw';
+      modalContent.style.height = 'auto';
+    } else {
+      modalContent.style.height = '90vh';
+      modalContent.style.width = 'auto';
+    }
+  };
+}
 
-  function closeModal() {
-    imgModal.setAttribute('aria-hidden', 'true');
-    setTimeout(() => (modalImg.src = ''), 200);
-    document.removeEventListener('keydown', escClose);
-  }
+function closeModal() {
+  imgModal.setAttribute('aria-hidden', 'true');
+  document.body.classList.remove('modal-open');
+  setTimeout(() => (modalImg.src = ''), 200);
+  document.removeEventListener('keydown', escClose);
+}
 
   function escClose(e) {
     if (e.key === 'Escape') closeModal();
@@ -145,7 +147,7 @@ function spawnHeart() {
   `;
 
   heartContainer.appendChild(heart);
-  setTimeout(() => heart.remove(), 18000);
+  setTimeout(() => heart.remove(), window.innerWidth < 600 ? 12000 : 18000);
 }
 
 setInterval(spawnHeart, 500);
