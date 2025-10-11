@@ -635,6 +635,11 @@ body.dark .heart-overlay .heart svg {
   }
 
 @media (max-width: 600px) {
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
   .header-inner {
     flex-direction: column;
     align-items: center;
@@ -648,7 +653,7 @@ body.dark .heart-overlay .heart svg {
   .site-header{
   position:relative;
   overflow:visible;
-  height: 88%;
+  height: 80%;
   background: #FFDFE9;
   box-shadow: var(--glow);
 }
@@ -717,18 +722,12 @@ body.dark .heart-overlay .heart svg {
   .btn.toggle i {
     font-size: 20px;
   }
-
-  .hero-wave {
-    margin-top: -50px;
-  }
 } 
   .btn.toggle i {
     font-size: 20px;
   }
 
   .hero-wave {
-    margin-top: -40px;
+    margin-top: -5px;
   }
-
 }
-
