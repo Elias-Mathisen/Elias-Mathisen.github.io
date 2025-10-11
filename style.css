@@ -325,6 +325,12 @@ main {
   transition: transform 320ms var(--transition);
 }
 
+.gallery[data-cat="ads"] {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+}
+
 .img-modal img {
   max-height: 92%;
   max-width: 92%;
@@ -334,6 +340,12 @@ main {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
+  
+}
+
+.gallery.active img:nth-child(3):nth-last-child(1) {
+  grid-column: 1 / span 2;
+  justify-self: center;
 }
 
 .gallery img {
@@ -699,17 +711,12 @@ body.dark .heart-overlay .heart svg {
   display: none;
 }
 
+
 .gallery.active {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   gap: 12px;
-}
-
-.gallery.active img:nth-child(3):nth-last-child(1) {
-  grid-column: 1 / span 2;
-  justify-self: center;
-  max-width: 70%;
 }
 
   .hero-image {
