@@ -265,6 +265,7 @@ main{ max-width:var(--site-width); margin: -20px auto 60px; padding:0 20px; }
   width: 100%;
   padding: 80px 0;
   margin-top: -80px;
+  height: 890px;
   overflow: visible;
 }
 
@@ -305,6 +306,7 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 12px;
   padding: 6px;
+  justify-content: center;
   opacity: 0;
   transform: translateY(12px);
   pointer-events: none;
@@ -340,6 +342,7 @@ main {
   display: block;
   border-radius: 12px;
   cursor: zoom-in;
+  justify-self: center;
   box-shadow: 0 20px 40px rgba(0,0,0,0.06);
   transition: transform 320ms var(--transition);
 }
@@ -772,6 +775,11 @@ body.dark .heart-overlay .heart svg {
   height: 36px;
   opacity: 0.5;
   animation: drop-heart 18s linear forwards;
+}
+
+.portfolio-section {
+  height: 800px;
+
 }
 
 
