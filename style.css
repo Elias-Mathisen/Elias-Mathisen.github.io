@@ -648,7 +648,7 @@ body.dark .heart-overlay .heart svg {
   .site-header{
   position:relative;
   overflow:visible;
-  height: 80%;
+  height: 88%;
   background: #FFDFE9;
   box-shadow: var(--glow);
 }
@@ -729,4 +729,5 @@ body.dark .heart-overlay .heart svg {
   .hero-wave {
     margin-top: -40px;
   }
+
 }
