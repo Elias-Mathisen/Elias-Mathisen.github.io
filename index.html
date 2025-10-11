@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Avery's Graphics</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <h1>Avery's Graphics</h1>
+        <p class="tag">Contributed to 37,500,000 Visits</p>
+        <div class="actions">
+          <a id="orderBtn" class="btn big order" href="https://discord.gg/xUbYWdq555" target="_blank" rel="noopener">Order Here</a>
+<button id="themeToggle" class="btn toggle" aria-pressed="false" title="Toggle Dark/Light Mode">
+<i class="fa-solid fa-sun"></i>
+</button>
+        </div>
+      </div>
+
+      
+
+      <div class="hero-image" aria-hidden="false">
+        <img src="assets/HeaderImage.png" alt="GFX Preview Image" />
+      </div>
+    </div>
+  </header>
+
+  <div class="hero-wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+      <path d="M0,120 C300,0 420,120 720,60 C1020,0 1140,120 1440,0 L1440 120 L0 120 Z"></path>
+    </svg>
+  </div>
+
+  <div class="heart-overlay" aria-hidden="true"></div>
+
+
+  <main>
+    <section class="portfolio-section" id="portfolio">
+      <div class="portfolio-bg"></div>
+      <div class="portfolio-content">
+        <h2>Portfolio</h2>
+        <div class="portfolio-controls">
+          <button class="tab active" data-cat="icons">Icons</button>
+          <button class="tab" data-cat="thumbs">Thumbnails</button>
+          <button class="tab" data-cat="ads">Ads</button>
+          <button class="tab" data-cat="renders">Renders</button>
+        </div>
+        <div class="portfolio-grid">
+          <div class="gallery active" data-cat="icons">
+            <img src="assets/Portfolio/Icons/AverysGraphics.png" alt="Icon 1" />
+            <img src="assets/Portfolio/Icons/EtherealLogo.png" alt="Icon 2" />
+            <img src="assets/Portfolio/Icons/EtherealLogo1.jpg" alt="Icon 3" />
+          </div>
+
+          <div class="gallery" data-cat="thumbs">
+            <img src="assets/Portfolio/Thumbnails/Halloween.png" alt="Thumb 1" />
+            <img src="assets/Portfolio/Thumbnails/PKRush.png" alt="Thumb 2" />
+            <img src="assets/Portfolio/Thumbnails/PKRush1.png" alt="Thumb 3" />
+          </div>
+
+          <div class="gallery" data-cat="ads">
+            <img src="https://placehold.co/300x300/ffb6d5/ffffff?text=Ad+1" alt="Ad 1" />
+            <img src="https://placehold.co/300x300/ff9ccf/ffffff?text=Ad+2" alt="Ad 2" />
+            <img src="https://placehold.co/300x300/ff6fb5/ffffff?text=Ad+3" alt="Ad 3" />
+          </div>
+
+          <div class="gallery" data-cat="renders">
+            <img src="assets/Portfolio/Renders/Swim.png" alt="Render 1" />
+            <img src="assets/Portfolio/Renders/Valk.png" alt="Render 2" />
+            <img src="assets/Portfolio/Renders/Angels.png" alt="Render 3" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  
+  <div class="portfolio-wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+      <path d="M0,0 C300,120 420,0 720,60 C1020,120 1140,0 1440,120 L1440 0 L0 0 Z"></path>
+    </svg>
+  </div>
+
+  <main>
+    <section class="prices" id="prices">
+      <h2>Commission Pricing</h2>
+      <div class="price-grid">
+        <article class="card">
+          <h3>Icon / Logo</h3>
+          <p class="price">3500 Robux</p>
+          <ul>
+            <li>Custom icon or logo</li>
+            <li>Placeholder Placeholder</li>
+            <li>Revised to your liking</li>
+          </ul>
+          <a class="btn order small" href="https://discord.gg/xUbYWdq555" target="_blank" rel="noopener">Order Icon</a>
+        </article>
+
+        <article class="card">
+          <h3>Thumbnail</h3>
+          <p class="price">4000 Robux</p>
+          <ul>
+            <li>Custom thumbnail</li>
+            <li>Blah Blah Blah</li>
+            <li>Revised to your liking</li>
+          </ul>
+          <a class="btn order small" href="https://discord.gg/xUbYWdq555" target="_blank" rel="noopener">Order Thumbnail</a>
+        </article>
+
+        <article class="card">
+          <h3>Ad</h3>
+          <p class="price">3750 Robux</p>
+          <ul>
+            <li>Custom ad</li>
+            <li>Blah Blah Blah</li>
+            <li>Revised to your liking</li>
+          </ul>
+          <a class="btn order small" href="https://discord.gg/xUbYWdq555" target="_blank" rel="noopener">Order Ad</a>
+        </article>
+
+        <article class="card">
+          <h3>Render</h3>
+          <p class="price">800 Robux</p>
+          <ul>
+            <li>Render your avatar</li>
+            <li>Full-body or Headshot</li>
+            <li>Revised to your liking</li>
+          </ul>
+          <a class="btn order small" href="https://discord.gg/xUbYWdq555" target="_blank" rel="noopener">Order Render</a>
+        </article>
+      </div>
+      <p class="text-small">All purchases MUST cover tax!</p>
+    </section>
+  </main>
+
+  <div id="imgModal" class="img-modal" aria-hidden="true">
+    <div class="modal-content">
+      <button id="modalClose" class="modal-close">&times;</button>
+      <img src="" alt="" />
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Avery's Graphics</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
