@@ -326,7 +326,6 @@ main {
 }
 
 .gallery[data-cat="ads"] {
-  display: grid;
   grid-template-columns: repeat(2, auto);
   justify-content: center;
 }
@@ -801,3 +800,4 @@ body.dark .heart-overlay .heart svg {
   }
 }
 }
+
