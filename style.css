@@ -325,7 +325,7 @@ main {
   transition: transform 320ms var(--transition);
 }
 
-.gallery[data-cat="ads"] {
+.gallery.active[data-cat="ads"] {
   grid-template-columns: repeat(2, auto);
   justify-content: center;
 }
@@ -800,4 +800,5 @@ body.dark .heart-overlay .heart svg {
   }
 }
 }
+
 
