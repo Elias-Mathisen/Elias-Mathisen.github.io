@@ -106,3 +106,9 @@ document.querySelectorAll(".nav-link").forEach(btn => {
 window.addEventListener('hashchange', () => {
   history.replaceState(null, '', location.pathname + location.search);
 });
+
+lightbox.addEventListener("click", (e) => {
+  if (e.target === lightbox) {
+    lightbox.style.display = "none";
+  }
+});
